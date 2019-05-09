@@ -1,0 +1,19 @@
+@charset "utf-8";
+.mapContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  .mapDiv {
+    width: 50%;
+    height: 320px;
+    margin-bottom: 20px;
+    .p{
+      height: 20px;
+      line-height: 20px;
+    }
+    .maps {
+      width: 100%;
+      height: calc(100% - 20px);
+    }
+  }
+}
