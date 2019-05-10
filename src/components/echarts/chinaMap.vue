@@ -1,6 +1,6 @@
 <template>
   <!--中国地图-->
-  <div id="myChart" class="maps"></div>
+  <div id="chinaChart" class="maps"></div>
 </template>
 
 <script>
@@ -18,8 +18,8 @@
     methods:{
       drawLine(){
         // 基于准备好的dom，初始化echarts实例
-        const myChartContainer = document.getElementById('myChart');
-        const myChart = this.$echarts.init(myChartContainer);
+        const chinaChartContainer = document.getElementById('chinaChart');
+        const chinaChart = this.$echarts.init(chinaChartContainer);
         this.$echarts.registerMap('china', china);
         // 绘制图表
         const optionMap = {
@@ -43,7 +43,7 @@
           },
           //地理坐标系组件 -- 这个是重点配置区
           geo: {
-            map: 'china', // 表示中国地图
+            map: 'china', // 表示XX地图
             roam: true,//是否开启鼠标缩放和平移漫游
             aspectScale: 1, //地图的长宽比
             zoom: 1.2,//当前视角的缩放比例
@@ -142,12 +142,12 @@
             }
           ]
         }
-        //myChart.showLoading();
-        myChart.setOption(optionMap,true);//是否不跟之前设置的 option 进行合并，默认为 false，即合并
+        //chinaChart.showLoading();
+        chinaChart.setOption(optionMap,true);//是否不跟之前设置的 option 进行合并，默认为 false，即合并
 
         window.onresize=function(){
-          myChart.resize();
-          //myChart.hideLoading();
+          chinaChart.resize();
+          //chinaChart.hideLoading();
         }
 
       }
