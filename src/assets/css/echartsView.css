@@ -1,0 +1,16 @@
+.mapContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start; }
+  .mapContent .mapDiv {
+    width: 50%;
+    height: 320px;
+    margin-bottom: 20px; }
+    .mapContent .mapDiv .p {
+      height: 20px;
+      line-height: 20px; }
+    .mapContent .mapDiv .maps {
+      width: 100%;
+      height: calc(100% - 20px); }
+
+/*# sourceMappingURL=echartsView.css.map */
