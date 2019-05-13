@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  .mapDiv {
+  .mapDiv, .mapfullDiv{
     width: 50%;
     height: 320px;
     margin-bottom: 20px;
@@ -14,6 +14,20 @@
     .maps {
       width: 100%;
       height: calc(100% - 20px);
+    }
+  }
+  .mapfullDiv{
+    width: 100%;
+    .mapsGeneral{
+      width: 50%;
+      height: calc(100% - 20px);
+    }
+    .mapfullD{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
     }
   }
 }

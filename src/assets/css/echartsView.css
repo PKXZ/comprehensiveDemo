@@ -2,15 +2,26 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start; }
-  .mapContent .mapDiv {
+  .mapContent .mapDiv, .mapContent .mapfullDiv {
     width: 50%;
     height: 320px;
     margin-bottom: 20px; }
-    .mapContent .mapDiv .p {
+    .mapContent .mapDiv .p, .mapContent .mapfullDiv .p {
       height: 20px;
       line-height: 20px; }
-    .mapContent .mapDiv .maps {
+    .mapContent .mapDiv .maps, .mapContent .mapfullDiv .maps {
       width: 100%;
       height: calc(100% - 20px); }
+  .mapContent .mapfullDiv {
+    width: 100%; }
+    .mapContent .mapfullDiv .mapsGeneral {
+      width: 50%;
+      height: calc(100% - 20px); }
+    .mapContent .mapfullDiv .mapfullD {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start; }
 
 /*# sourceMappingURL=echartsView.css.map */

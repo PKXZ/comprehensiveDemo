@@ -11,7 +11,9 @@
 }
 #app{
   @include FullScreen;
-  overflow: hidden;
+}
+.fullDiv{
+  @include FullScreen;
 }
 *{
   font-size : 14px;
